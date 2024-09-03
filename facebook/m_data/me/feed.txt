@@ -1,0 +1,320 @@
+{
+    "created_time": "2024-09-02T21:47:35+0000",
+    "message": "Wow this is amazing",
+    "metadata": {
+        "fields": [
+            {
+                "name": "actions",
+                "description": "Action links",
+                "type": "list"
+            },
+            {
+                "name": "admin_creator",
+                "description": "The admin creator of a Page Post. Only available if there exists more than one admin for the page.",
+                "type": "businessuser|user|application"
+            },
+            {
+                "name": "allowed_advertising_objectives",
+                "description": "The only objectives under which this post can be advertised",
+                "type": "list<string>"
+            },
+            {
+                "name": "application",
+                "description": "Information about the app this post was published by.",
+                "type": "application"
+            },
+            {
+                "name": "backdated_time",
+                "description": "The backdated time for backdate post. For regular post, this field will be set to null.",
+                "type": "datetime"
+            },
+            {
+                "name": "call_to_action",
+                "description": "The call to action type used in any Page posts for mobile app engagement ads.",
+                "type": "struct with keys: type, value"
+            },
+            {
+                "name": "can_reply_privately",
+                "description": "Whether the page viewer can send a private reply to this post",
+                "type": "bool"
+            },
+            {
+                "name": "caption",
+                "description": "The caption of a link in the post (appears beneath the name).",
+                "type": "string"
+            },
+            {
+                "name": "child_attachments",
+                "description": "Sub-shares of a multi-link share post",
+                "type": "list"
+            },
+            {
+                "name": "id",
+                "description": "The post ID.",
+                "type": "token with structure: post id"
+            },
+            {
+                "name": "comments_mirroring_domain",
+                "description": "If comments are being mirrored to an external site, this function returns the domain of that external site.",
+                "type": "string"
+            },
+            {
+                "name": "coordinates",
+                "description": "An array of information about the attachment to the post",
+                "type": "struct with keys: checkin_id, author_uid, page_id, target_id, target_href, coords, tagged_uids, timestamp, message, target_type"
+            },
+            {
+                "name": "created_time",
+                "description": "The time the post was published, expressed as UNIX timestamp",
+                "type": "datetime"
+            },
+            {
+                "name": "description",
+                "description": "A description of a link in the post (appears beneath the caption).",
+                "type": "string"
+            },
+            {
+                "name": "event",
+                "description": "If this Post has a place, the event associated with the place",
+                "type": "event"
+            },
+            {
+                "name": "expanded_height",
+                "description": "An array of information about the attachment to the post",
+                "type": "unsigned int32"
+            },
+            {
+                "name": "expanded_width",
+                "description": "An array of information about the attachment to the post",
+                "type": "unsigned int32"
+            },
+            {
+                "name": "feed_targeting",
+                "description": "Object that controls news feed targeting for this post. Anyone in these groups will be more likely to see this post, others will be less likely, but may still see it anyway. Any of the targeting fields shown here can be used, none are required (applies to Pages only).",
+                "type": "struct with keys: country, cities, regions, genders, age_min, age_max, education_statuses, college_years, relationship_statuses, interests, interested_in, user_adclusters, locales, countries, geo_locations, work_positions, work_employers, education_majors, education_schools, family_statuses, life_events, industries, politics, ethnic_affinity, generation, fan_of, relevant_until_ts"
+            },
+            {
+                "name": "from",
+                "description": "The ID of the user, page, group, or event that published the post",
+                "type": "user|page"
+            },
+            {
+                "name": "full_picture",
+                "description": "If the photo's largest dimension exceeds 720 pixels, it is resized, with the largest dimension set to 720.",
+                "type": "string"
+            },
+            {
+                "name": "height",
+                "description": "An array of information about the attachment to the post",
+                "type": "unsigned int32"
+            },
+            {
+                "name": "icon",
+                "description": "A link to an icon representing the type of this post.",
+                "type": "string"
+            },
+            {
+                "name": "instagram_eligibility",
+                "description": "Whether the post can be promoted on Instagram. It returns the enum \"eligible\" if it can be promoted.  Otherwise it returns an enum for why it cannot be promoted",
+                "type": "enum"
+            },
+            {
+                "name": "is_app_share",
+                "description": "Whether or not the post references an app",
+                "type": "bool"
+            },
+            {
+                "name": "is_eligible_for_promotion",
+                "description": "Whether the post is eligible for promotion.",
+                "type": "bool"
+            },
+            {
+                "name": "is_expired",
+                "description": "Whether the post has expiration time that has passed",
+                "type": "bool"
+            },
+            {
+                "name": "is_hidden",
+                "description": "Whether a post has been set to hidden",
+                "type": "bool"
+            },
+            {
+                "name": "is_inline_created",
+                "description": "Returns True if the post was created inline when creating ads.",
+                "type": "bool"
+            },
+            {
+                "name": "is_instagram_eligible",
+                "description": "Whether this post can be promoted in Instagram",
+                "type": "bool"
+            },
+            {
+                "name": "is_popular",
+                "description": "Whether the post is currently popular. Based on whether the total actions as a percentage of reach exceeds a certain threshold",
+                "type": "bool"
+            },
+            {
+                "name": "is_published",
+                "description": "Indicates whether a scheduled post was published (applies to scheduled Page Post only, for users post and instanlty published posts this value is always true)",
+                "type": "bool"
+            },
+            {
+                "name": "is_spherical",
+                "description": "Whether the post is a spherical video post",
+                "type": "bool"
+            },
+            {
+                "name": "link",
+                "description": "A description of a link in the post (appears beneath the caption).",
+                "type": "uri"
+            },
+            {
+                "name": "message",
+                "description": "The message written in the post",
+                "type": "string"
+            },
+            {
+                "name": "message_tags",
+                "description": "Profiles mentioned or tagged in a message. This is an object with a unique key for each mention or tag in the message. ",
+                "type": "list"
+            },
+            {
+                "name": "multi_share_end_card",
+                "description": "Whether display the end card for a multi-link share post",
+                "type": "bool"
+            },
+            {
+                "name": "multi_share_optimized",
+                "description": "Whether automatically select the order of the links in multi-link share post when used in an ad",
+                "type": "bool"
+            },
+            {
+                "name": "name",
+                "description": "The name of the link.",
+                "type": "string"
+            },
+            {
+                "name": "object_id",
+                "description": "The ID of any uploaded photo or video attached to the post.",
+                "type": "string"
+            },
+            {
+                "name": "parent_id",
+                "description": "The ID of a parent post for this post, if it exists. For example, if this story is a 'Your Page was mentioned in a post' story, the parent_id will be the original post where the mention happened",
+                "type": "token with structure: post id"
+            },
+            {
+                "name": "permalink_url",
+                "description": "The permanent static URL to the post on www.facebook.com. Example: https://www.facebook.com/FacebookforDevelopers/posts/10153449196353553",
+                "type": "uri"
+            },
+            {
+                "name": "place",
+                "description": "ID of the place associated with the post",
+                "type": "place"
+            },
+            {
+                "name": "privacy",
+                "description": "The privacy settings for a post",
+                "type": "privacy"
+            },
+            {
+                "name": "promotable_id",
+                "description": "ID of post to use for promotion for stories that cannot be promoted directly",
+                "type": "token with structure: post id"
+            },
+            {
+                "name": "properties",
+                "description": "A list of properties for any attached video, for example, the length of the video.",
+                "type": "list"
+            },
+            {
+                "name": "scheduled_publish_time",
+                "description": "UNIX timestamp of the scheduled publish time for the post",
+                "type": "float"
+            },
+            {
+                "name": "shares",
+                "description": "Number of times the post has been shared",
+                "type": "struct with keys: count"
+            },
+            {
+                "name": "source",
+                "description": "A URL to any Flash movie or video file attached to the post. ",
+                "type": "string"
+            },
+            {
+                "name": "status_type",
+                "description": "Description of the type of a status update.",
+                "type": "string"
+            },
+            {
+                "name": "story",
+                "description": "Text of stories not intentionally generated by users, such as those generated when two users become friends. You must have the \"Include recent activity stories\" migration enabled in your app to retrieve this field",
+                "type": "string"
+            },
+            {
+                "name": "story_tags",
+                "description": "The list of tags in the post description",
+                "type": "list"
+            },
+            {
+                "name": "subscribed",
+                "description": "Whether user is subscribed to the post",
+                "type": "bool"
+            },
+            {
+                "name": "target",
+                "description": "The profile this was posted on if different from the author",
+                "type": "profile"
+            },
+            {
+                "name": "targeting",
+                "description": "Object that limited the audience for this content. Anyone not in these demographics will not be able to view this content. This will not override any Page-level demographic restrictions that may be in place.",
+                "type": "struct with keys: country, cities, regions, zips, genders, college_networks, work_networks, age_min, age_max, education_statuses, college_years, college_majors, political_views, relationship_statuses, interests, keywords, interested_in, user_clusters, user_clusters2, user_clusters3, user_adclusters, excluded_user_adclusters, custom_audiences, excluded_custom_audiences, locales, radius, connections, excluded_connections, friends_of_connections, countries, excluded_user_clusters, adgroup_id, user_event, qrt_versions, page_types, user_os, user_device, action_spec, action_spec_friend, action_spec_excluded, geo_locations, excluded_geo_locations, targeted_entities, conjunctive_user_adclusters, wireless_carrier, site_category, work_positions, work_employers, education_majors, education_schools, family_statuses, life_events, behaviors, travel_status, industries, politics, markets, income, net_worth, home_type, home_ownership, home_value, ethnic_affinity, generation, household_composition, moms, office_type, interest_clusters_expansion, dynamic_audience_ids, product_audience_specs, excluded_product_audience_specs, exclusions, flexible_spec, engagement_specs, excluded_engagement_specs"
+            },
+            {
+                "name": "timeline_visibility",
+                "description": "Timeline visibility information of the post",
+                "type": "string"
+            },
+            {
+                "name": "type",
+                "description": "A string indicating the object type of this post.",
+                "type": "string"
+            },
+            {
+                "name": "updated_time",
+                "description": "The time the post was last updated, which occurs when a user comments on the post.",
+                "type": "datetime"
+            },
+            {
+                "name": "via",
+                "description": "ID of the user or Page the post was shared from",
+                "type": "user|page"
+            },
+            {
+                "name": "video_buying_eligibility",
+                "description": "Whether the post can be promoted with different video buying options. It returns an empty list when video is eligible.  Otherwise it returns a list of reasons why thepost cannot be promoted.",
+                "type": "list<enum>"
+            },
+            {
+                "name": "width",
+                "description": "An array of information about the attachment to the post",
+                "type": "unsigned int32"
+            }
+        ],
+        "type": "post",
+        "connections": {
+            "attachments": "https://graph.facebook.com/v20.0/421092731084245_420145927845592/attachments?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo",
+            "comments": "https://graph.facebook.com/v20.0/421092731084245_420145927845592/comments?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo",
+            "dynamic_posts": "https://graph.facebook.com/v20.0/421092731084245_420145927845592/dynamic_posts?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo",
+            "insights": "https://graph.facebook.com/v20.0/421092731084245_420145927845592/insights?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo",
+            "reactions": "https://graph.facebook.com/v20.0/421092731084245_420145927845592/reactions?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo",
+            "sharedposts": "https://graph.facebook.com/v20.0/421092731084245_420145927845592/sharedposts?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo",
+            "sponsor_tags": "https://graph.facebook.com/v20.0/421092731084245_420145927845592/sponsor_tags?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo",
+            "to": "https://graph.facebook.com/v20.0/421092731084245_420145927845592/to?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo"
+        }
+    },
+    "id": "421092731084245_420145927845592"
+}

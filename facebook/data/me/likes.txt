@@ -1,0 +1,136 @@
+{
+    "data": [
+        {
+            "name": "Prime Media",
+            "id": "355676161799558",
+            "created_time": "2024-02-10T17:45:00+0000"
+        },
+        {
+            "name": "Drone \u121a\u12f2\u12ec",
+            "id": "1874888159287013",
+            "created_time": "2024-02-10T17:44:57+0000"
+        },
+        {
+            "name": "Amhara Media Corporation/ \u12a0\u121b\u122b \u121a\u12f2\u12eb \u12ae\u122d\u1356\u122c\u123d\u1295",
+            "id": "118697174971952",
+            "created_time": "2024-02-10T17:44:53+0000"
+        },
+        {
+            "name": "WMCC",
+            "id": "489211707826282",
+            "created_time": "2024-02-10T17:44:51+0000"
+        },
+        {
+            "name": "Ethiopian News Agency",
+            "id": "1490190331223441",
+            "created_time": "2024-02-10T17:44:49+0000"
+        },
+        {
+            "name": "Ethiopian Broadcasting Corporation",
+            "id": "541629952535552",
+            "created_time": "2024-02-10T17:44:46+0000"
+        },
+        {
+            "name": "Sarcasm",
+            "id": "1515871602074952",
+            "created_time": "2024-02-10T17:43:36+0000"
+        },
+        {
+            "name": "Change - \u12e8\u12a0\u1235\u1270\u1233\u1230\u1265 \u1208\u12cd\u1325",
+            "id": "100907962034974",
+            "created_time": "2024-02-10T04:08:29+0000"
+        },
+        {
+            "name": "Ministry of Education  Ethiopia",
+            "id": "557831994320064",
+            "created_time": "2023-11-18T11:49:56+0000"
+        },
+        {
+            "name": "Hawassa University College Of Medicine And Health Sciences",
+            "id": "104756092194563",
+            "created_time": "2023-08-27T08:32:43+0000"
+        },
+        {
+            "name": "FDRE Defense Force - \u12e8\u12a2\u134c\u12f4\u122a \u1218\u12a8\u120b\u12a8\u12eb \u1220\u122b\u12ca\u1275",
+            "id": "654684251716987",
+            "created_time": "2023-08-09T21:57:41+0000"
+        },
+        {
+            "name": "ReviewEthio",
+            "id": "1015300831872239",
+            "created_time": "2023-08-09T15:26:20+0000"
+        },
+        {
+            "name": "Mimi's Addis",
+            "id": "131833810925074",
+            "created_time": "2023-08-09T15:25:38+0000"
+        },
+        {
+            "name": "ESAT",
+            "id": "112106198821471",
+            "created_time": "2023-08-09T12:15:17+0000"
+        },
+        {
+            "name": "National Election Board of Ethiopia NEBE \u12e8\u12a2\u1275\u12ee\u1335\u12eb \u1265\u1214\u122b\u12ca \u121d\u122d\u132b \u1266\u122d\u12f5",
+            "id": "414693405979601",
+            "created_time": "2023-08-09T12:14:54+0000"
+        },
+        {
+            "name": "Ministry of  Revenues of Ethiopia /\u12e8\u1308\u1262\u12ce\u127d \u121a\u1292\u1235\u1274\u122d /",
+            "id": "576189955813613",
+            "created_time": "2023-08-09T12:14:28+0000"
+        },
+        {
+            "name": "Eye Radio",
+            "id": "453617178046906",
+            "created_time": "2023-08-09T12:14:07+0000"
+        },
+        {
+            "name": "Elelanafjobs.com",
+            "id": "101757285631596",
+            "created_time": "2023-08-09T11:57:37+0000"
+        },
+        {
+            "name": "Abbay TV",
+            "id": "226319900828380",
+            "created_time": "2023-08-09T11:33:17+0000"
+        },
+        {
+            "name": "Yetneberk Tadele",
+            "id": "101526228023066",
+            "created_time": "2023-08-09T11:32:56+0000"
+        },
+        {
+            "name": "ETHIO MEDIA",
+            "id": "1575185046064534",
+            "created_time": "2023-08-09T11:32:55+0000"
+        },
+        {
+            "name": "Ethiopian Human Rights Commission",
+            "id": "202584253551816",
+            "created_time": "2023-08-09T11:32:51+0000"
+        },
+        {
+            "name": "BBC Media Action Ethiopia",
+            "id": "110602040605523",
+            "created_time": "2023-08-09T11:32:39+0000"
+        },
+        {
+            "name": "VOA Amharic",
+            "id": "113333248697895",
+            "created_time": "2023-08-09T11:32:25+0000"
+        },
+        {
+            "name": "CGTN Africa",
+            "id": "422898847759660",
+            "created_time": "2023-08-09T11:30:32+0000"
+        }
+    ],
+    "paging": {
+        "cursors": {
+            "before": "MzU1Njc2MTYxNzk5NTU4",
+            "after": "NDIyODk4ODQ3NzU5NjYw"
+        },
+        "next": "https://graph.facebook.com/v20.0/421092731084245/likes?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo&limit=25&after=NDIyODk4ODQ3NzU5NjYw"
+    }
+}

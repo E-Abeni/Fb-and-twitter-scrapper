@@ -1,0 +1,101 @@
+{
+    "created_time": "2024-09-02T21:47:35+0000",
+    "name": "Timeline photos",
+    "metadata": {
+        "fields": [
+            {
+                "name": "id",
+                "description": "The Album ID.",
+                "type": "numeric string"
+            },
+            {
+                "name": "backdated_time",
+                "description": "A user-specified time for when this object was created",
+                "type": "datetime"
+            },
+            {
+                "name": "backdated_time_granularity",
+                "description": "How accurate the backdated time is",
+                "type": "enum"
+            },
+            {
+                "name": "can_upload",
+                "description": "Whether the app user can upload photos to this Album",
+                "type": "bool"
+            },
+            {
+                "name": "count",
+                "description": "The approximate number of [Photos](/docs/graph-api/reference/photo) and [Videos](/docs/graph-api/reference/video) in the Album.",
+                "type": "unsigned int32"
+            },
+            {
+                "name": "cover_photo",
+                "description": "Album cover photo id",
+                "type": "photo"
+            },
+            {
+                "name": "created_time",
+                "description": "The Album creation date and time.",
+                "type": "datetime"
+            },
+            {
+                "name": "description",
+                "description": "The Album description.",
+                "type": "string"
+            },
+            {
+                "name": "event",
+                "description": "If this object has a place, the event associated with the place",
+                "type": "event"
+            },
+            {
+                "name": "from",
+                "description": "The User who created the Album.",
+                "type": "user|page"
+            },
+            {
+                "name": "link",
+                "description": "A link to this Album on Facebook.",
+                "type": "token with structure: url"
+            },
+            {
+                "name": "location",
+                "description": "The Album textual location.",
+                "type": "string"
+            },
+            {
+                "name": "name",
+                "description": "The Album title.",
+                "type": "string"
+            },
+            {
+                "name": "place",
+                "description": "Place info",
+                "type": "place"
+            },
+            {
+                "name": "privacy",
+                "description": "The Album privacy settings.",
+                "type": "string"
+            },
+            {
+                "name": "type",
+                "description": "The Album type: album, app, cover, profile, mobile, normal, or wall",
+                "type": "string"
+            },
+            {
+                "name": "updated_time",
+                "description": "The date and time the Album was last updated.",
+                "type": "datetime"
+            }
+        ],
+        "type": "album",
+        "connections": {
+            "comments": "https://graph.facebook.com/v20.0/420145924512259/comments?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo",
+            "likes": "https://graph.facebook.com/v20.0/420145924512259/likes?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo",
+            "photos": "https://graph.facebook.com/v20.0/420145924512259/photos?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo",
+            "picture": "https://graph.facebook.com/v20.0/420145924512259/picture?access_token=EAAG3T7OoVLkBO9bc6ZCCkSgMZCOmUHePX4N5DKpavGfPZB8laWdAw2XiCRbpwfEv6TlFQbn0UPJzPnjSGlZBPOc5EL5baZADaa6GvR19yXZC9q4QwozqGxCUUb1C8ZBxER517NQBSw5S4FqiulohiGuLtpOLZAppakBfZCQLslCpm9e62ZCaPlput2JWFGbvPqjMTSOE7IGsLiheUqMybZBosyCq9olH5TVPQ8kDMRZCpUEQNQV2zIm5xZB7HQLfhNeNo"
+        }
+    },
+    "id": "420145924512259"
+}
