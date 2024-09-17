@@ -1,0 +1,11 @@
+access token = 1757097746022989826-bgIIP3WRcrSdVfjqbwlharQ6waKli0
+access token secrete = jcnWgwJoaFjBsMsoEAUG8QITlSAVnHiQuE18Wl5EUgKHr
+
+api key = vPbjhTls9QiuBEzDLA15RPETH
+api secrete = 6OnidAvvO8VZxe3jzZr6IYkeOAoSZNfAzbDwzwERx2BxHliGNn
+
+bearer: AAAAAAAAAAAAAAAAAAAAAMi%2BvgEAAAAAQqYLWMnRDgsuZyin2prT9g9Acwc%3DgLjj4RNl1b1liyMSAgkD7eL1AUYcoqAj1HiemVMDjbxayz2alN
+
+OAuth oauth_consumer_key="vPbjhTls9QiuBEzDLA15RPETH", 
+oauth_nonce="OAUTH_NONCE", oauth_signature="OAUTH_SIGNATURE", oauth_signature_method="HMAC-SHA1", oauth_timestamp="OAUTH_TIMESTAMP", 
+oauth_token="ACCESS_TOKEN", oauth_version="1.0"'
