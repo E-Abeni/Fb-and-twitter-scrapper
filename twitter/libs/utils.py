@@ -1,7 +1,6 @@
 from random import randint
-from datetime import datetime
 import time
-from parser import parse_tweet
+from libs.parser import parse_tweet, parse_user
 import csv
 
 async def get_comments(results):
@@ -9,7 +8,7 @@ async def get_comments(results):
         results = None
     else:
         wait_time = randint(5, 10)
-        print(f'{datetime.now()} - Getting next tweets after {wait_time} seconds ...')
+        print(f'[Sleep] - Fetching tweets after {wait_time} seconds ...')
         time.sleep(wait_time)
         results = await results.next()
 
@@ -18,11 +17,11 @@ async def get_comments(results):
 
 async def get_tweets(results, query, client):
     if results is None:
-        print(f'{datetime.now()} - Getting tweets...')
+        print(f'[Fetch] - Fetching tweets...')
         results = await client.search_tweet(query, product='Top')
     else:
         wait_time = randint(5, 10)
-        print(f'{datetime.now()} - Getting next tweets after {wait_time} seconds ...')
+        print(f'[Sleep] - Fetching tweets after {wait_time} seconds ...')
         time.sleep(wait_time)
         results = await results.next()
 
@@ -39,8 +38,8 @@ def write_tweet(tweet, path):
             writer.writerow(tweet_obj)
 
         except Exception as e:
-            print("Error: ", tweet)
-
+            #print("Error: ", tweet)
+            pass
 
             """
             print("------------------")
@@ -61,7 +60,16 @@ def write_tweet(tweet, path):
 
 
 
+def write_user(user, path):
+    user_obj = parse_user(user)
 
+    with open(path, 'a', newline='', encoding="utf-8") as file:
+        try:
+            writer = csv.writer(file)
+            writer.writerow(user_obj)
+
+        except Exception as e:
+            print("Error: ", user)
 
 
 

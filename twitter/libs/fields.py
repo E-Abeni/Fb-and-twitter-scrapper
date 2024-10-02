@@ -38,7 +38,6 @@ selected_tweet_functions = ['get_favoriters',
 selected_user_attributes = ['can_dm',
                             'can_media_tag',
                             'created_at',
-                            'created_at_datetime',
                             'default_profile',
                             'default_profile_image',
                             'description',
@@ -67,9 +66,13 @@ selected_user_attributes = ['can_dm',
                             'url',
                             'urls',
                             'verified',
-                            'want_retweets',
-                            'withheld_in_countries']
+                            'want_retweets'
+                            ]
 
+removed_user = [
+    'created_at_datetime',
+    'withheld_in_countries'
+]
 
 selected_user_functions = ['get_dm_history',
                             'get_followers',
