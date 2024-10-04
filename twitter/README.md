@@ -1,11 +1,12 @@
-Author: @Abenezer_Tamirat
-Date: Oct-03-2024 G.C
+<h1>Author: @Abenezer_Tamirat</h1>
+<h1>Date: Oct-03-2024 G.C </h1>
 
-Purpose:
+<h1>Purpose:</h1>
 	This Script will scrap tweets from X (formerly twitter). It uses twikit library to interact with twitter. It does use the standard API but scraps responses by making http requests.
 
-Usage:
-	1. First provide credentials in login_info.txt file separated by new line:
+<h1>Usage:</h1>
+	
+ 	1. First provide credentials in login_info.txt file separated by new line:
 		- First line : email
 		- Second line : username
 		- Third line : password
