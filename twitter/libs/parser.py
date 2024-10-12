@@ -1,4 +1,6 @@
+
 def parse_tweet(tweet):
+    
     data = [
             "None" if tweet.community_note == None else  tweet.community_note,
             tweet.created_at,

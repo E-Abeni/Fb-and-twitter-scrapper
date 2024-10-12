@@ -1,4 +1,9 @@
-200
-Africa
+50
+(from:addisstandardam)
 Ethiopia
-Election
+Tigiray
+Amhara
+Oromo
+Abiy Ahmed
+War
+Peace

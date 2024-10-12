@@ -2,6 +2,7 @@ from random import randint
 import time
 from libs.parser import parse_tweet, parse_user
 import csv
+import os
 
 async def get_comments(results):
     if results is None:
@@ -27,6 +28,23 @@ async def get_tweets(results, query, client):
 
     return results
 
+import pandas as pd
+
+def write_tweet(tweet, path):
+    tweet_obj = parse_tweet(tweet)
+
+    tweet_df = pd.DataFrame([tweet_obj])
+
+    if os.path.exists(path):
+        existing_df = pd.read_excel(path)
+        existing_df = pd.concat([existing_df, tweet_df], ignore_index=True)
+    else:
+        existing_df = tweet_df
+
+    existing_df.to_excel(path, index=False)
+
+"""
+# Write to CSV file. changed to xslx to handle amharic characters
 
 def write_tweet(tweet, path):
     tweet_obj = parse_tweet(tweet)
@@ -41,7 +59,7 @@ def write_tweet(tweet, path):
             #print("Error: ", tweet)
             pass
 
-            """
+            """"""
             print("------------------")
             print(e, "Length: ", len(tweet_obj))
             print("+++++++++++++++++++")
@@ -54,12 +72,28 @@ def write_tweet(tweet, path):
             for i in tweet_obj:
                 print(type(i))
             print("+++++++++++++++++++")
-            """
+            """"""
+
+    return 0
+"""
+
+def write_user(user, path):
+    user_obj = parse_user(user)
+
+    user_df = pd.DataFrame([user_obj])
+
+    if os.path.exists(path):
+        existing_df = pd.read_excel(path)
+        existing_df = pd.concat([existing_df, user_df], ignore_index=True)
+    else:
+        existing_df = user_df
+
+    existing_df.to_excel(path, index=False)
 
     return 0
 
-
-
+"""
+# Write to CSV file. changed to xslx to handle amharic characters
 def write_user(user, path):
     user_obj = parse_user(user)
 
@@ -71,5 +105,5 @@ def write_user(user, path):
         except Exception as e:
             print("Error: ", user)
 
-
+"""
 

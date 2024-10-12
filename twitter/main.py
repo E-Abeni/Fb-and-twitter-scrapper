@@ -4,6 +4,7 @@ from libs.fields import selected_tweet_attributes as sta, selected_user_attribut
 import csv
 from libs.extractors import extract_tweets
 import os
+import pandas as pd
 
 
 client = tw.Client(language="en-US")
@@ -25,8 +26,8 @@ else:
     print("[Login] User already logged in")
 
 
-
-"""Checkes and creates path to store the fetched tweets"""
+"""
+#Checkes and creates path to store the fetched tweets
 tweets_path = "tweets.csv"
 users_path = "users.csv"
 
@@ -45,7 +46,27 @@ if not os.path.exists(users_path):
     print("[File Created] Users file created as ", users_path)
 else:
     print(f"[Exists] Users path ({users_path}) already exists")
+"""
 
+
+# Changed to xslx in order to handle Amharic characters
+tweets_path = "tweets.xlsx"
+users_path = "users.xlsx"
+
+if not os.path.exists(tweets_path):
+    df = pd.DataFrame([sta])
+    df.to_excel(tweets_path, index=False)
+    print("[File Created] Tweets file created as ", tweets_path)
+else:
+    print(f"[Exists] Tweets path ({tweets_path}) already exists")
+
+
+if not os.path.exists(users_path):
+    df = pd.DataFrame([sua])
+    df.to_excel(users_path, index=False)
+    print("[File Created] Users file created as ", users_path)
+else:
+    print(f"[Exists] Users path ({users_path}) already exists")
 
 
 
