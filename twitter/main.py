@@ -73,7 +73,7 @@ else:
 """Loads query strings"""
 inputs = []
 try:
-    with open("inputs.txt", 'r') as file:
+    with open("inputs.txt", 'r', encoding="utf-8") as file:
         inputs = file.read().splitlines()
 except:
     print("[File missing] inputs.txt file is missing. Please read the README file.")
