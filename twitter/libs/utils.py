@@ -1,8 +1,18 @@
 from random import randint
 import time
 from libs.parser import parse_tweet, parse_user
-import csv
 import os
+
+from confluent_kafka import Producer
+import socket
+import json
+
+conf = {'bootstrap.servers': 'localhost:9092',
+        'client.id': socket.gethostname()}
+
+
+producer = Producer(conf)
+topic = "unprocessed_tweets"
 
 async def get_comments(results):
     if results is None:
@@ -32,6 +42,10 @@ import pandas as pd
 
 def write_tweet(tweet, path):
     tweet_obj = parse_tweet(tweet)
+
+    data = {'id': tweet_obj[8], 'text': tweet_obj[4]}
+    producer.produce(topic, value = json.dumps(data))
+    producer.flush()
 
     tweet_df = pd.DataFrame([tweet_obj])
 
