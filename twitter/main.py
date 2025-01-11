@@ -50,7 +50,7 @@ else:
 
 
 # Changed to xslx in order to handle Amharic characters
-tweets_path = "tweets.xlsx"
+tweets_path = "weets.xlsx"
 users_path = "users.xlsx"
 
 if not os.path.exists(tweets_path):
@@ -89,7 +89,7 @@ except:
 
 
 """run the scrapper to extract tweets for every query string"""
-i = 0
+i = 1
 while i < (len(query_strings)):
     try:
         print(f"===={query_strings[i]}====================================================")
@@ -99,7 +99,7 @@ while i < (len(query_strings)):
         print("="*len(query_strings[i]))
 
     except Exception as e:
-        #print("Error(main): ", e)
+        print("Error(main): ", e)
         continue
 
     i+=1

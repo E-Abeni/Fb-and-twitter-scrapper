@@ -7,13 +7,16 @@ from confluent_kafka import Producer
 import socket
 import json
 
+"""
 conf = {'bootstrap.servers': 'localhost:9092',
         'client.id': socket.gethostname()}
 
 
 producer = Producer(conf)
 topic = "unprocessed_tweets"
+"""
 
+ 
 async def get_comments(results):
     if results is None:
         results = None
@@ -43,14 +46,16 @@ import pandas as pd
 def write_tweet(tweet, path):
     tweet_obj = parse_tweet(tweet)
 
+    """
     data = {'id': tweet_obj[8], 'text': tweet_obj[4]}
     producer.produce(topic, value = json.dumps(data))
     producer.flush()
+    """
 
     tweet_df = pd.DataFrame([tweet_obj])
 
     if os.path.exists(path):
-        existing_df = pd.read_excel(path)
+        existing_df = pd.read_excel(path, engine='openpyxl')
         existing_df = pd.concat([existing_df, tweet_df], ignore_index=True)
     else:
         existing_df = tweet_df
